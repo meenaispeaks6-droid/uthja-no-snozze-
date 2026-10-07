@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device-admin xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-policies>
+        <!--
+          Minimal policy declarations for anti-uninstall protection.
+          No destructive permissions (such as wipe-data or reset-password) are declared.
+        -->
+    </uses-policies>
+</device-admin>

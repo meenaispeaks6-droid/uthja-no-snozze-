@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="940" viewBox="0 0 800 940" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Soft card background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#F9F5F0"/>
+    </linearGradient>
+
+    <!-- Trunk gradient -->
+    <linearGradient id="trunkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#553F3C"/>
+      <stop offset="50%" stop-color="#7B5F58"/>
+      <stop offset="100%" stop-color="#4A3431"/>
+    </linearGradient>
+
+    <!-- Branch gradient -->
+    <linearGradient id="branchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#694F4A"/>
+      <stop offset="100%" stop-color="#523B37"/>
+    </linearGradient>
+
+    <!-- Bird gradient -->
+    <linearGradient id="birdGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#735799"/>
+      <stop offset="100%" stop-color="#4E366C"/>
+    </linearGradient>
+
+    <!-- Blossom radial gradients -->
+    <radialGradient id="blossomCenter" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F78EA6" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#FCA8BD" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FCD5E0" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <radialGradient id="blossomSoft" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCA0B7" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#FCD8E3" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <radialGradient id="blossomLight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEDCE5" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFF5F7" stop-opacity="0.0"/>
+    </radialGradient>
+
+    <!-- Ground wash -->
+    <linearGradient id="groundGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8E2D8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#D7E0CC" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#EAD2DA" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1. Background Card -->
+  <rect x="0" y="0" width="800" height="940" rx="44" ry="44" fill="url(#bgGrad)"/>
+
+  <!-- 2. Header Text: "12-day streak" -->
+  <text x="56" y="96" font-family="DejaVu Sans" font-weight="bold" font-size="48" fill="#1C2132" letter-spacing="-0.5">12-day streak</text>
+
+  <!-- 3. Top Right Menu Lines (Three lavender bars) -->
+  <rect x="668" y="60" width="62" height="6.5" rx="3.2" fill="#B1A3CD"/>
+  <rect x="668" y="75" width="62" height="6.5" rx="3.2" fill="#B1A3CD"/>
+  <rect x="686" y="90" width="44" height="6.5" rx="3.2" fill="#B1A3CD"/>
+
+  <!-- 4. Subtitle: "You're glowing! 💕" -->
+  <text x="58" y="152" font-family="DejaVu Serif, Georgia" font-style="italic" font-size="34" fill="#7B788C">You're glowing!</text>
+  <!-- Pink Heart -->
+  <path d="M 334 140 C 334 133 328 128 322 128 C 317 128 313 131 311 135 C 309 131 305 128 300 128 C 294 128 288 133 288 140 C 288 149 298 156 311 164 C 324 156 334 149 334 140 Z" fill="#F49CB0" transform="translate(18, -12) scale(0.9)"/>
+
+  <!-- 5. Ground Watercolor Wash & Meadow -->
+  <ellipse cx="400" cy="815" rx="280" ry="45" fill="url(#groundGrad)"/>
+  <path d="M 180 825 Q 300 810 400 818 T 620 825 Q 520 855 400 850 T 180 825 Z" fill="#E6DFC8" opacity="0.35"/>
+
+  <!-- Floating little pink and lilac wildflower sprouts on ground -->
+  <g fill="#A583C4" opacity="0.7">
+    <ellipse cx="230" cy="808" rx="3" ry="8" transform="rotate(-15 230 808)"/>
+    <ellipse cx="234" cy="805" rx="3" ry="9"/>
+    <ellipse cx="238" cy="809" rx="3" ry="7" transform="rotate(15 238 809)"/>
+
+    <ellipse cx="295" cy="818" rx="3" ry="8" transform="rotate(-10 295 818)"/>
+    <ellipse cx="300" cy="815" rx="3" ry="9"/>
+
+    <ellipse cx="505" cy="818" rx="3" ry="8" transform="rotate(-8 505 818)"/>
+    <ellipse cx="510" cy="814" rx="3" ry="9"/>
+    <ellipse cx="515" cy="818" rx="3" ry="7" transform="rotate(10 515 818)"/>
+
+    <ellipse cx="570" cy="812" rx="3" ry="8"/>
+    <ellipse cx="575" cy="809" rx="3" ry="9"/>
+  </g>
+
+  <!-- Tiny pink ground flowers -->
+  <g fill="#F593AB" opacity="0.75">
+    <circle cx="215" cy="815" r="4.5"/>
+    <circle cx="270" cy="824" r="4"/>
+    <circle cx="340" cy="828" r="4.5"/>
+    <circle cx="465" cy="828" r="4"/>
+    <circle cx="535" cy="823" r="4.5"/>
+    <circle cx="590" cy="816" r="4"/>
+  </g>
+
+  <!-- Ground Floating Heart Petals -->
+  <path d="M 605 770 C 605 765 601 761 597 761 C 593 761 590 763 589 766 C 588 763 585 761 581 761 C 577 761 573 765 573 770 C 573 777 580 782 589 788 C 598 782 605 777 605 770 Z" fill="#F7AEC0" opacity="0.65" transform="scale(0.8) translate(145, 180)"/>
+  <path d="M 235 770 C 235 765 231 761 227 761 C 223 761 220 763 219 766 C 218 763 215 761 211 761 C 207 761 203 765 203 770 C 203 777 210 782 219 788 C 228 782 235 777 235 770 Z" fill="#F7AEC0" opacity="0.6" transform="scale(0.85) translate(40, 160)"/>
+
+  <!-- 6. Tree Roots -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Main Center-Left Root -->
+    <path d="M 390 755 Q 360 785 300 815 Q 260 825 210 832" stroke="#68504B" stroke-width="12" opacity="0.9"/>
+    <path d="M 380 765 Q 345 795 280 820" stroke="#7A615B" stroke-width="8" opacity="0.85"/>
+    <path d="M 330 805 Q 300 825 250 838" stroke="#5D4743" stroke-width="5" opacity="0.8"/>
+
+    <!-- Main Center-Right Root -->
+    <path d="M 420 755 Q 460 785 520 815 Q 565 826 615 832" stroke="#68504B" stroke-width="13" opacity="0.9"/>
+    <path d="M 435 765 Q 480 795 550 820" stroke="#7A615B" stroke-width="8.5" opacity="0.85"/>
+    <path d="M 490 805 Q 530 825 580 838" stroke="#5D4743" stroke-width="5.5" opacity="0.8"/>
+
+    <!-- Sub-tap roots -->
+    <path d="M 398 770 Q 395 810 385 838" stroke="#634B46" stroke-width="7" opacity="0.75"/>
+    <path d="M 412 770 Q 425 810 435 836" stroke="#634B46" stroke-width="6.5" opacity="0.75"/>
+    <path d="M 360 810 Q 340 830 315 842" stroke="#523D39" stroke-width="4" opacity="0.7"/>
+    <path d="M 460 810 Q 485 830 510 842" stroke="#523D39" stroke-width="4" opacity="0.7"/>
+  </g>
+
+  <!-- 7. Gnarled Bonsai Trunk -->
+  <path d="M 380 760 Q 365 710 395 650 Q 425 590 410 520 Q 395 470 385 430 L 415 430 Q 430 475 440 520 Q 455 590 425 650 Q 395 710 430 760 Z" fill="url(#trunkGrad)"/>
+  <!-- Trunk Bark Textures & Watercolor shading -->
+  <path d="M 388 740 Q 375 690 405 640 Q 430 585 418 525" stroke="#483330" stroke-width="5" fill="none" stroke-linecap="round" opacity="0.7"/>
+  <path d="M 412 745 Q 390 690 415 635 Q 442 580 430 525" stroke="#8A6E67" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 400 660 Q 420 620 410 560" stroke="#3A2724" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- 8. Primary & Secondary Woody Branches -->
+  <g fill="none" stroke-linecap="round">
+    <!-- Left Major Branch (Curves down and spreads left) -->
+    <path d="M 390 470 Q 330 460 270 475 Q 220 490 170 510" stroke="#5C4440" stroke-width="11"/>
+    <path d="M 320 465 Q 260 430 200 425 Q 160 420 120 430" stroke="#684E49" stroke-width="7.5"/>
+    <path d="M 270 475 Q 240 520 200 545" stroke="#553D39" stroke-width="5"/>
+    <path d="M 230 440 Q 190 400 150 390" stroke="#604743" stroke-width="4.5"/>
+    <path d="M 340 450 Q 300 390 250 360 Q 210 340 170 330" stroke="#634A46" stroke-width="6"/>
+
+    <!-- Right Major Branch (Curves up and spreads right) -->
+    <path d="M 410 460 Q 480 440 550 455 Q 610 470 660 490" stroke="#5C4440" stroke-width="10"/>
+    <path d="M 460 445 Q 520 410 590 395 Q 640 385 680 395" stroke="#684E49" stroke-width="7"/>
+    <path d="M 540 455 Q 580 495 620 525" stroke="#553D39" stroke-width="4.8"/>
+    <path d="M 500 420 Q 540 360 600 330 Q 640 310 680 300" stroke="#634A46" stroke-width="5.5"/>
+    <path d="M 560 400 Q 600 360 640 350" stroke="#5C4440" stroke-width="4"/>
+
+    <!-- Top Center Canopy Branches -->
+    <path d="M 395 440 Q 380 370 365 310 Q 350 260 330 220" stroke="#604743" stroke-width="8"/>
+    <path d="M 405 440 Q 425 365 445 305 Q 465 255 490 215" stroke="#604743" stroke-width="7.5"/>
+    <path d="M 385 360 Q 340 330 300 300 Q 270 280 240 270" stroke="#553D39" stroke-width="5"/>
+    <path d="M 425 350 Q 470 320 510 290 Q 540 270 580 260" stroke="#553D39" stroke-width="5"/>
+    <path d="M 370 300 Q 395 240 400 180" stroke="#634A46" stroke-width="5"/>
+  </g>
+
+  <!-- 9. Cherry Blossom Cloud Canopy (Layered Watercolor Splashes & Petal Clusters) -->
+  <g>
+    <!-- Background Large Soft Pink Aura Washes -->
+    <circle cx="400" cy="360" r="230" fill="url(#blossomLight)"/>
+    <circle cx="310" cy="380" r="180" fill="url(#blossomSoft)"/>
+    <circle cx="490" cy="370" r="180" fill="url(#blossomSoft)"/>
+    <circle cx="380" cy="270" r="160" fill="url(#blossomSoft)"/>
+
+    <!-- Outer Blossom Clusters (Left Wing) -->
+    <circle cx="160" cy="420" r="55" fill="url(#blossomCenter)"/>
+    <circle cx="210" cy="370" r="70" fill="url(#blossomCenter)"/>
+    <circle cx="180" cy="480" r="50" fill="url(#blossomSoft)"/>
+    <circle cx="250" cy="420" r="75" fill="url(#blossomCenter)"/>
+    <circle cx="220" cy="480" r="60" fill="url(#blossomSoft)"/>
+    <circle cx="270" cy="510" r="50" fill="url(#blossomCenter)"/>
+    <circle cx="200" cy="320" r="60" fill="url(#blossomSoft)"/>
+    <circle cx="260" cy="340" r="70" fill="url(#blossomCenter)"/>
+
+    <!-- Outer Blossom Clusters (Right Wing) -->
+    <circle cx="640" cy="400" r="55" fill="url(#blossomCenter)"/>
+    <circle cx="590" cy="360" r="70" fill="url(#blossomCenter)"/>
+    <circle cx="630" cy="460" r="50" fill="url(#blossomSoft)"/>
+    <circle cx="560" cy="420" r="75" fill="url(#blossomCenter)"/>
+    <circle cx="590" cy="480" r="60" fill="url(#blossomSoft)"/>
+    <circle cx="530" cy="500" r="50" fill="url(#blossomCenter)"/>
+    <circle cx="610" cy="310" r="60" fill="url(#blossomSoft)"/>
+    <circle cx="540" cy="330" r="70" fill="url(#blossomCenter)"/>
+
+    <!-- Top & Central Canopy Clusters -->
+    <circle cx="400" cy="230" r="80" fill="url(#blossomCenter)"/>
+    <circle cx="340" cy="260" r="85" fill="url(#blossomCenter)"/>
+    <circle cx="460" cy="250" r="85" fill="url(#blossomCenter)"/>
+    <circle cx="300" cy="290" r="75" fill="url(#blossomCenter)"/>
+    <circle cx="500" cy="280" r="75" fill="url(#blossomCenter)"/>
+    <circle cx="380" cy="310" r="95" fill="url(#blossomCenter)"/>
+    <circle cx="430" cy="330" r="95" fill="url(#blossomCenter)"/>
+    <circle cx="320" cy="360" r="85" fill="url(#blossomCenter)"/>
+    <circle cx="480" cy="370" r="85" fill="url(#blossomCenter)"/>
+    <circle cx="400" cy="400" r="90" fill="url(#blossomCenter)"/>
+    <circle cx="360" cy="450" r="70" fill="url(#blossomCenter)"/>
+    <circle cx="440" cy="440" r="70" fill="url(#blossomCenter)"/>
+
+    <!-- Crisp Detailed Petal Circles (Watercolor dabs) -->
+    <g fill="#F78EA5" opacity="0.85">
+      <circle cx="170" cy="390" r="14"/><circle cx="190" cy="430" r="16"/>
+      <circle cx="230" cy="380" r="15"/><circle cx="215" cy="450" r="14"/>
+      <circle cx="280" cy="400" r="18"/><circle cx="250" cy="470" r="16"/>
+      <circle cx="310" cy="340" r="17"/><circle cx="290" cy="490" r="13"/>
+      <circle cx="340" cy="280" r="16"/><circle cx="330" cy="430" r="18"/>
+      <circle cx="380" cy="240" r="15"/><circle cx="370" cy="380" r="19"/>
+      <circle cx="420" cy="220" r="16"/><circle cx="410" cy="350" r="20"/>
+      <circle cx="460" cy="260" r="16"/><circle cx="450" cy="410" r="17"/>
+      <circle cx="490" cy="310" r="18"/><circle cx="480" cy="460" r="15"/>
+      <circle cx="530" cy="350" r="17"/><circle cx="520" cy="440" r="16"/>
+      <circle cx="570" cy="380" r="16"/><circle cx="560" cy="480" r="14"/>
+      <circle cx="610" cy="340" r="15"/><circle cx="600" cy="430" r="15"/>
+      <circle cx="650" cy="380" r="13"/><circle cx="630" cy="440" r="12"/>
+    </g>
+
+    <!-- Deep Pink Accent Petal Dots -->
+    <g fill="#ED6887" opacity="0.8">
+      <circle cx="190" cy="370" r="8"/><circle cx="240" cy="420" r="9"/>
+      <circle cx="270" cy="360" r="9"/><circle cx="310" cy="410" r="10"/>
+      <circle cx="350" cy="310" r="9"/><circle cx="360" cy="430" r="10"/>
+      <circle cx="400" cy="270" r="10"/><circle cx="420" cy="380" r="11"/>
+      <circle cx="450" cy="290" r="9"/><circle cx="470" cy="420" r="10"/>
+      <circle cx="510" cy="340" r="10"/><circle cx="540" cy="390" r="9"/>
+      <circle cx="580" cy="330" r="8"/><circle cx="610" cy="400" r="8"/>
+    </g>
+
+    <!-- Light White-Pink Highlights -->
+    <g fill="#FFF0F5" opacity="0.75">
+      <circle cx="360" cy="250" r="14"/><circle cx="430" cy="240" r="14"/>
+      <circle cx="280" cy="320" r="15"/><circle cx="510" cy="310" r="15"/>
+      <circle cx="340" cy="350" r="16"/><circle cx="460" cy="340" r="16"/>
+      <circle cx="220" cy="410" r="12"/><circle cx="580" cy="410" r="12"/>
+    </g>
+  </g>
+
+  <!-- 10. The Three Purple / Plum Birds Perched on Branches -->
+
+  <!-- BIRD 1 (Left branch, facing right towards center) -->
+  <g id="bird1" transform="translate(200, 480)">
+    <!-- Shadow under feet -->
+    <ellipse cx="25" cy="42" rx="14" ry="3.5" fill="#4B3330" opacity="0.4"/>
+    <!-- Tail Feathers (extending down-left) -->
+    <path d="M 12 28 L -14 50 L -6 52 L 18 34 Z" fill="#493264"/>
+    <path d="M 14 30 L -8 54 L -2 55 L 20 35 Z" fill="#583E76"/>
+    <!-- Body -->
+    <ellipse cx="24" cy="22" rx="18" ry="14" fill="url(#birdGrad)" transform="rotate(-18 24 22)"/>
+    <!-- Wing -->
+    <path d="M 12 18 Q 24 16 30 26 Q 22 36 6 32 Z" fill="#432B5E"/>
+    <path d="M 14 20 Q 22 18 27 25 Q 20 32 10 29 Z" fill="#6A4D8D"/>
+    <!-- Head -->
+    <circle cx="36" cy="12" r="9.5" fill="#644886"/>
+    <!-- Beak (pointing right) -->
+    <polygon points="44,11 53,13 44,16" fill="#3D2952"/>
+    <!-- Eye -->
+    <circle cx="39" cy="11" r="1.5" fill="#201430"/>
+    <circle cx="38.5" cy="10.5" r="0.6" fill="#FFFFFF"/>
+    <!-- Feet grasping branch -->
+    <line x1="20" y1="34" x2="22" y2="42" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="28" y1="33" x2="30" y2="42" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- BIRD 2 (Middle branch, perched and looking up-right) -->
+  <g id="bird2" transform="translate(490, 465)">
+    <!-- Tail Feathers -->
+    <path d="M 12 28 L -10 48 L -4 50 L 18 34 Z" fill="#493264"/>
+    <!-- Body -->
+    <ellipse cx="22" cy="22" rx="17" ry="13" fill="url(#birdGrad)" transform="rotate(-15 22 22)"/>
+    <!-- Wing -->
+    <path d="M 10 18 Q 22 16 28 25 Q 20 34 6 30 Z" fill="#432B5E"/>
+    <path d="M 12 20 Q 20 18 25 24 Q 18 30 9 28 Z" fill="#6A4D8D"/>
+    <!-- Head -->
+    <circle cx="34" cy="12" r="9" fill="#644886"/>
+    <!-- Beak -->
+    <polygon points="42,11 50,13 42,15" fill="#3D2952"/>
+    <!-- Eye -->
+    <circle cx="37" cy="11" r="1.4" fill="#201430"/>
+    <circle cx="36.5" cy="10.5" r="0.5" fill="#FFFFFF"/>
+    <!-- Feet -->
+    <line x1="18" y1="33" x2="20" y2="41" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="26" y1="32" x2="28" y2="41" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- BIRD 3 (Upper right branch, looking outward) -->
+  <g id="bird3" transform="translate(570, 420)">
+    <!-- Tail Feathers -->
+    <path d="M 14 30 L -12 55 L -5 57 L 20 36 Z" fill="#493264"/>
+    <!-- Body -->
+    <ellipse cx="25" cy="23" rx="19" ry="14" fill="url(#birdGrad)" transform="rotate(-22 25 23)"/>
+    <!-- Wing -->
+    <path d="M 12 18 Q 25 16 32 27 Q 24 37 6 33 Z" fill="#432B5E"/>
+    <path d="M 15 21 Q 23 19 29 26 Q 21 33 11 30 Z" fill="#6A4D8D"/>
+    <!-- Head -->
+    <circle cx="38" cy="12" r="10" fill="#644886"/>
+    <!-- Beak -->
+    <polygon points="47,11 56,13 47,16" fill="#3D2952"/>
+    <!-- Eye -->
+    <circle cx="41" cy="11" r="1.5" fill="#201430"/>
+    <circle cx="40.5" cy="10.5" r="0.6" fill="#FFFFFF"/>
+    <!-- Feet -->
+    <line x1="21" y1="35" x2="23" y2="44" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="30" y1="34" x2="32" y2="44" stroke="#3D2952" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- 11. Floating Soft Blossoms and Heart Petals in the Breeze -->
+  <g>
+    <!-- Drifting Petals -->
+    <ellipse cx="140" cy="560" rx="6" ry="3.5" fill="#F8A2B6" transform="rotate(35 140 560)" opacity="0.75"/>
+    <ellipse cx="280" cy="610" rx="5" ry="3" fill="#F8A2B6" transform="rotate(-25 280 610)" opacity="0.7"/>
+    <ellipse cx="500" cy="600" rx="6" ry="3.5" fill="#F8A2B6" transform="rotate(45 500 600)" opacity="0.7"/>
+    <ellipse cx="660" cy="540" rx="5" ry="3" fill="#F8A2B6" transform="rotate(-30 660 540)" opacity="0.75"/>
+    <ellipse cx="670" cy="410" rx="4" ry="2.5" fill="#F8A2B6" transform="rotate(15 670 410)" opacity="0.6"/>
+    <ellipse cx="130" cy="450" rx="4" ry="2.5" fill="#F8A2B6" transform="rotate(-10 130 450)" opacity="0.6"/>
+
+    <!-- Drifting Tiny Hearts -->
+    <path d="M 670 380 C 670 376 667 373 664 373 C 661 373 659 374 658 376 C 657 374 655 373 652 373 C 649 373 646 376 646 380 C 646 385 651 389 658 394 C 665 389 670 385 670 380 Z" fill="#F49EB1" opacity="0.55" transform="rotate(15 658 383) scale(0.9)"/>
+    <path d="M 155 390 C 155 386 152 383 149 383 C 146 383 144 384 143 386 C 142 384 140 383 137 383 C 134 383 131 386 131 390 C 131 395 136 399 143 404 C 150 399 155 395 155 390 Z" fill="#F49EB1" opacity="0.5" transform="rotate(-10 143 393) scale(0.85)"/>
+  </g>
+</svg>
