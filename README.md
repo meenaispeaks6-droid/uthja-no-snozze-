@@ -1,4 +1,6 @@
-# ⏰ LUNE — Gen Z Anti-Snooze Alarm (Android)
+# ⏰ Uthja — Gen Z Anti-Snooze Alarm (Android)
+
+Live-uthja.meenai.in
 
 A Gen Z-focused alarm app that actually gets you out of bed. Dismiss the alarm by completing challenges — shake your phone, solve math problems, or type to prove you're really awake.
 
